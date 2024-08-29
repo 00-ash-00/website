@@ -1,0 +1,223 @@
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background: #333;
+    color: #fff;
+    padding: 1rem;
+    text-align: center;
+}
+
+main {
+    padding: 2rem;
+}
+
+footer {
+    background: #333;
+    color: #fff;
+    text-align: center;
+    padding: 1rem;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+
+
+/* Hamburger Menu Styles */
+.hamburger-menu {
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    z-index: 1;
+}
+
+#menu__toggle {
+    opacity: 0;
+}
+
+#menu__toggle:checked + .menu__btn > span {
+    transform: rotate(45deg);
+}
+
+#menu__toggle:checked + .menu__btn > span::before {
+    top: 0;
+    transform: rotate(0deg);
+}
+
+#menu__toggle:checked + .menu__btn > span::after {
+    top: 0;
+    transform: rotate(90deg);
+}
+
+#menu__toggle:checked ~ .menu__box {
+    left: 0 !important;
+}
+
+.menu__btn {
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    width: 26px;
+    height: 26px;
+    cursor: pointer;
+    z-index: 1;
+}
+
+.menu__btn > span,
+.menu__btn > span::before,
+.menu__btn > span::after {
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    background-color: #fff;
+    transition-duration: .25s;
+}
+
+.menu__btn > span::before {
+    content: '';
+    top: -8px;
+}
+
+.menu__btn > span::after {
+    content: '';
+    top: 8px;
+}
+
+.menu__box {
+    display: block;
+    position: fixed;
+    top: 0;
+    left: -100%;
+    width: 300px;
+    height: 100%;
+    margin: 0;
+    padding: 80px 0;
+    list-style: none;
+    background-color: #333;
+    box-shadow: 2px 2px 6px rgba(0, 0, 0, .4);
+    transition-duration: .25s;
+}
+
+.menu__item {
+    display: block;
+    padding: 12px 24px;
+    color: #fff;
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;
+    font-weight: 600;
+    text-decoration: none;
+    transition-duration: .25s;
+}
+
+.menu__item:hover {
+    background-color: #555;
+}
+
+/* Skills Page Styles */
+
+.skills-container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 2rem;
+}
+
+.skill-box {
+    margin-bottom: 1rem;
+    text-align: center;
+}
+
+.skill-label {
+    margin-bottom: 0.5rem;
+    font-weight: bold;
+    text-align: center;
+}
+
+.skill-bar {
+    background-color: #cddee4;
+    height: 20px;
+    border-radius: 10px;
+    overflow: hidden;
+    width: 50%;
+    margin: 0 auto;
+}
+
+.skill-level {
+    background-color: #652f85;
+    height: 100%;
+}
+
+/* Contact Page Styles */
+
+.contact-links {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+.contact-links a {
+    display: inline-block;
+    transition: transform 0.3s ease;
+}
+
+.contact-links a:hover {
+    transform: scale(1.1);
+}
+
+.contact-logo {
+    width: 50px;
+    height: 50px;
+    object-fit: contain;
+}
+
+.contact-txt1 {
+    text-align: center;
+}
+.contact-txt2 {
+    text-align: center;
+}
+
+
+
+.profile-image {
+    display: block;
+    margin: 0 auto 1rem auto;
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+}
+
+/* Styling for the h4 index  */
+.index-ng {
+    background-color: #5a7075;
+    border: #e7a61b;
+    border-radius: 8px;
+    color: white;
+    padding: 10px;
+    display: inline-block; 
+    text-align: left; 
+    margin: 0 auto; 
+}
+
+#bio {
+    text-align: center; 
+    margin: 20px auto;
+    max-width: 800px; 
+}
+
+p {
+    text-align: justify; 
+    margin: 10px 0;
+    font-family: arial;
+}
+
+.index-aboutme {
+    text-align: left;
+}
