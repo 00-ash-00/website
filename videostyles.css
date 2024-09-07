@@ -1,0 +1,31 @@
+.youtube-logo {
+    width: 40px;
+    height: 40px;
+    margin-top: 1px;
+    display: inline-block;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 30px;
+    background-color: aqua;
+    
+}
+
+body {
+    text-align: center;
+}
+
+#video-line {
+    width: 90%;
+    height: 90%;
+    margin-top: 0%;
+    margin-left: 0%;
+    background-color: black;
+}
+
+#audio-file {
+    background-color: blue;
+    width: 80%;
+    border-radius: 10px;
+}
